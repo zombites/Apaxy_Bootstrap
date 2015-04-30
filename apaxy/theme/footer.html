@@ -1,13 +1,35 @@
-	<div class="block">
-		You can add your own HTML above or below the directory listing. Simply explore the <code>header.html</code> and <code>footer.html</code> files.
+	<hr />
+	<div>
+		You can add your own HTML below the directory listing. Simply explore the <code>footer.html</code> file.
 	</div><!--/.postlisting-->
 
-</div><!--/.wrapper-->
+</div><!--/.container-->
 
-<div class="footer">
-	Apaxy by <a href="https://twitter.com/adamwhitcroft">@adamwhitcroft</a>
+<div class="footer text-muted">
+	<a href="https://github.com/AdamWhitcroft/Apaxy">Apaxy</a> | <a href="http://getbootstrap.com">Bootstrap</a> | <a href="https://datatables.net/">DataTables</a> | <span class="glyphicon glyphicon-heart text-danger"></span>
 </div><!--/.footer-->
 <script>
-// grab the 2nd child and add the parent class. tr:nth-child(2)
-document.getElementsByTagName('tr')[1].className = 'parent';
+	var myTable = jQuery("table");
+	var thead = myTable.find("thead");
+	var thRows =  myTable.find("tr:has(th)");
+
+	if (thead.length===0){  //if there is no thead element, add one.
+		 thead = jQuery("<thead></thead>").appendTo(myTable);    
+	}
+
+	var copy = thRows.clone(true).appendTo("thead");
+	thRows.remove();
+
+
+	$("th:first").css("width", "16px");
+	$("tr td:first-child").addClass("text-center");
+
+	$("table").addClass("table table-hover table-condensed");
+	$('table').dataTable({
+		"pageLength": 25,
+		order: [[0]],
+		"columnDefs": [
+			{ "orderable": false, "targets": 0 }
+		]
+	});
 </script>

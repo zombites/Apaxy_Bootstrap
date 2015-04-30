@@ -1,122 +1,73 @@
 /*------------------------------------*\
-    Apaxy
-    by @adamwhitcroft
+    Apaxy_Bootstrap
+    by @zombites
 
-    Theme name: Apaxy
-    Theme author: @adamwhitcroft
+    Theme name: Apaxy_Bootstrap
+    Theme author: @zombites
+
+		Original theme: Apaxy
+		Original autor: @AdamWhitcroft
 \*------------------------------------*/
+
 @import url('//fonts.googleapis.com/css?family=Open+Sans');
-/* Have to use @import for the font, as you can only specify a single stylesheet */
-* {
-	margin:0;
-	padding:0;
-	-webkit-box-sizing:border-box;
-	   -moz-box-sizing:border-box;
-	       box-sizing: border-box; 
-}
+
+/* General */
 
 html {
-	min-height:100%;
-	border-top:10px solid #ECEEF1;
-	border-bottom:10px solid #ECEEF1;
-	color:#61666c;
-	font-weight:400;
-	font-size:1em;
-	font-family:'Open Sans', sans-serif;
+	border-top:10px solid #46B8DA;
+	padding-top: 15px;
 	line-height:2em;
 }
+
 body {
-	padding:20px;
-	-webkit-backface-visibility:hidden;
+	font-family:'Open Sans', sans-serif;
 }
-code {
-	font-family:consolas,monospace;	
-}
+
 a {
 	color:#61666c;
 	text-decoration:none;
 }
 a:hover {
-	color:#2a2a2a;
+	color:#2A2A2A;
+	text-decoration:none;
 }
-/*------------------------------------*\
-    Wrapper
-\*------------------------------------*/
-.wrapper {
-	margin:0 auto;
-	padding-top:20px;
-	max-width:500px;
-}
-/*------------------------------------*\
-    Demo block
-\*------------------------------------*/
-.block {
-	font-size:.875em;
-	margin:20px 0;
-	padding:20px;
-	color:#9099A3;
-}
-/*------------------------------------*\
-    Table (directory listing)
-\*------------------------------------*/
-table {
-	width:100%;
-	border-collapse:collapse;
-	font-size:.875em;
-}
-tr {
-	outline:0;
-	border:0;
-}
-tr:hover td {
-	background:#f6f6f6;
-}
+
+/* Table */
+
 th {
-	text-align:left;
-	font-size:.75em;
-	padding-right:20px;
+	font-size:.85em;
 }
-/* 2nd Column: Filename */
-th + th {
-	width:65%;
+
+.table > tbody > tr > td {
+	border-top: 0;
+	border-bottom: 1px solid #DDDDDD;
+	padding-bottom: 5px;
 }
-/* 3rd Column: Last Modified */
-th + th + th {
+
+.table > tbody > tr:hover > td {
+	background-color: #F6F6F6;
+	border-bottom-color: #46B8DA !important;
 }
-/* 4th Column: Size */
-th + th + th + th {
-	width:5%;
+
+/* Pager */
+
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus {
+	background-color: #46B8DA;
+	border-color: #46B8DA;
 }
-tr td:first-of-type {
-	padding-left:10px;
-	padding-right:10px;
+
+.pagination > li > a:focus,
+.pagination > li > a:hover {
+	color: #46B8DA;
 }
-td {
-	padding:5px 0;
-	outline:0;
-	border:0;
-	border-bottom:1px solid #edf1f5;
-	vertical-align:middle;
-	text-align:left;
-	-webkit-transition:background 300ms ease;
-	   -moz-transition:background 300ms ease;
-	    -ms-transition:background 300ms ease;
-	     -o-transition:background 300ms ease;
-	        transition:background 300ms ease;
-}
-td a{
-	display: block;
-}
-tr.parent a[href^="/"] {
-	color:#9099A3;
-}
-	.parent a[href^="/"]:hover {
-		color:#2281d0;
-	}
-/*------------------------------------*\
-    Footer
-\*------------------------------------*/
+
+/* Footer */
 .footer {
+	border-top: 1px solid #DDDDDD;
+	margin-top: 15px;
+	padding: 5px 0 10px;
 	text-align:center;
 	font-size:.75em;
 }

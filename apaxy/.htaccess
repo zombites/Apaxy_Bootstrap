@@ -1,0 +1,87 @@
+#
+# Apaxy by @adamwhitcroft
+#
+# For a full breakdown of the mod_autoindex module:
+# http://apache.org/docs/2.2/mod/mod_autoindex.html
+#
+
+	# FORCE LISTING
+	DirectoryIndex
+
+	# ENABLE INDEXING
+	Options +Indexes
+
+	# INDEX OPTIONS
+	IndexOptions +Charset=UTF-8 +FancyIndexing +IgnoreCase +FoldersFirst +XHTML +HTMLTable +SuppressRules +SuppressDescription +NameWidth=* +IconsAreLinks +SuppressHTMLPreamble +SuppressColumnSorting
+
+	# HIDE /theme DIRECTORY
+	IndexIgnore .htaccess /theme
+
+#
+# GENERAL ICONS (BLANK, DIRECTORY, PARENT DIRECTORY)
+#
+
+#
+# Replace Apaxy_Bootstrap/apaxy with your directory URL eg:
+# If your directory is http://mywebsite.com/share/
+# you would change to:
+#
+# AddIcon /share/Apaxy_Bootstrap/apaxy/theme/icons/blank.png ^^BLANKICON^^
+#
+
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/blank.png ^^BLANKICON^^
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/folder.png ^^DIRECTORY^^
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/folder-home.png ..
+
+#
+# EXTENSION SPECIFIC ICONS
+#
+
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/archive.png .7z .bz2 .cab .gz .tar
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/audio.png .aac .aif .aifc .aiff .ape .au .flac .iff .m4a .mid .mp3 .mpa .ra .wav .wma .f4a .f4b .oga .ogg .xm .it .s3m .mod
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/bin.png .bin .hex
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/bmp.png .bmp
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/c.png .c
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/calc.png .xlsx .xlsm .xltx .xltm .xlam .xlr .xls .csv
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/cpp.png .cpp
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/css.png .css .sass .scss
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/deb.png .deb
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/doc.png .doc .docx .docm .dot .dotx .dotm .log .msg .odt .pages .rtf .tex .wpd .wps
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/draw.png .svg .svgz
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/eps.png .ai .eps
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/exe.png .exe
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/gif.png .gif
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/h.png .h
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/html.png .html .xhtml .shtml .htm .URL .url
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/ico.png .ico
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/java.png .jar
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/jpg.png .jpg .jpeg .jpe
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/js.png .js .json
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/markdown.png .md
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/package.png .pkg .dmg
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/pdf.png .pdf
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/php.png .php .phtml
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/playlist.png .m3u .m3u8 .pls .pls8
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/png.png .png
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/ps.png .ps
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/psd.png .psd
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/py.png .py
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/rar.png .rar
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/rb.png .rb
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/rpm.png .rpm
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/rss.png .rss
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/script.png .bat .cmd .sh
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/sql.png .sql
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/tiff.png .tiff .tif
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/text.png .txt .nfo
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/video.png .asf .asx .avi .flv .mkv .mov .mp4 .mpg .rm .srt .swf .vob .wmv .m4v .f4v .f4p .ogv
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/xml.png .xml
+	AddIcon /Apaxy_Bootstrap/apaxy/theme/icons/zip.png .zip
+	DefaultIcon /Apaxy_Bootstrap/apaxy/theme/icons/default.png
+
+#
+# THEME FILES
+#
+
+	HeaderName /Apaxy_Bootstrap/apaxy/theme/header.html
+	ReadmeName /Apaxy_Bootstrap/apaxy/theme/footer.html

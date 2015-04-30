@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteRule ^index$ index.php
+RewriteRule ^page/(.*)$ page.php?link=$1
+RewriteRule ^contacto$ contacto.php
+
+ErrorDocument 404 /inuede/sergio/404.php
