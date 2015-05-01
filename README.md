@@ -37,7 +37,7 @@ Should be changed to...
 * Once done, rename `htaccess.txt` to `.htaccess` in both the `/share` and `/share/theme` folders.
 * [Treat yo'self](http://25.media.tumblr.com/tumblr_lw7q28y0Mz1qanm80o1_500.gif), you're done.
 
-##Apaxy themes
+##Apaxy_Bootstrap themes
 
 If you'd like to alter the Apaxy_Bootstrap theme, look in the `/theme` folder and you'll find the following files:
 
@@ -68,6 +68,6 @@ The default Apaxy theme `/themes/apaxy` has icons in place for the following mim
 
 ##Credits
 
-Apaxy owes it's existence to the amazing [h5ai](http://larsjung.de/h5ai/) by [Lars Jung](https://twitter.com/lrsjng). Had I not seen this, I would never have looked into making my own (probably way less useful) version.
+Apaxy_Bootstrap owes it's existence to the amazing [apaxy](http://adamwhitcroft.com/apaxy/) by [Adam Whitcroft](https://twitter.com/adamwhitcroft). Had I not seen this, I would never have looked into making my own (probably way less useful) version. ;)
 
 [Faenza Icons](http://tiheum.deviantart.com/art/Faenza-Icons-173323228) are used in the `apaxy` theme.
