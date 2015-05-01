@@ -1,6 +1,6 @@
-#Apaxy
+#Apaxy_Bootstrap
 
-Demo: [adamwhitcroft.com/apaxy](http://adamwhitcroft.com/apaxy/)
+Adding bootstrap to [adamwhitcroft.com/apaxy](http://adamwhitcroft.com/apaxy/)
 
 Apaxy is a customisable theme built to enhance the experience of browsing web directories. It uses the `mod_autoindex` Apache module—and some CSS—to override the default style of a directory listing.
 
@@ -24,6 +24,7 @@ Let's assume you have a folder named `share` in your server root directory (the 
 * Download and unzip Apaxy
 * Copy and paste the contents of the `/apaxy` folder to your `/share` folder.
 * Edit `htaccess.txt` (now in the `/share` folder) and update all instances of paths marked with *{FOLDERNAME}* to point to your site root.
+* Edit too `header.html` and replace *{FOLDERNAME}* to point to your own style.
 
 So...
 
@@ -38,7 +39,7 @@ Should be changed to...
 
 ##Apaxy themes
 
-If you'd like to alter the default Apaxy theme, look in the `/theme` folder and you'll find the following files:
+If you'd like to alter the Apaxy_Bootstrap theme, look in the `/theme` folder and you'll find the following files:
 
 * `header.html`
 * `footer.html`
