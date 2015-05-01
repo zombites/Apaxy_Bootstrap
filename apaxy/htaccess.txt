@@ -24,7 +24,7 @@
 #
 
 #
-# Replace Apaxy_Bootstrap/apaxy with your directory URL eg:
+# Replace {FOLDERNAME} with your directory URL eg:
 # If your directory is http://mywebsite.com/share/
 # you would change to:
 #
