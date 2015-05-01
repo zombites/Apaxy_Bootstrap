@@ -28,7 +28,7 @@
 # If your directory is http://mywebsite.com/share/
 # you would change to:
 #
-# AddIcon /share/Apaxy_Bootstrap/apaxy/theme/icons/blank.png ^^BLANKICON^^
+# AddIcon /share/{FOLDERNAME}/theme/icons/blank.png ^^BLANKICON^^
 #
 
 	AddIcon /{FOLDERNAME}/theme/icons/blank.png ^^BLANKICON^^
